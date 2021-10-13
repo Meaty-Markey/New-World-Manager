@@ -5,4 +5,22 @@
     <h1>@ViewBag.Title</h1>
 
 
+<!DOCTYPE html> 
 
+
+  
+   <body>
+       <input type="text" placeholder="Search Items" id="search" onchange="openPage()" />
+       <script>
+           function openPage() {
+               var x = document.getElementById("Search").value;
+
+               if (x == "Iron") {
+                   window.open("/Login.cshtml");
+               }
+
+
+
+           }
+       </script>
+   </body>
